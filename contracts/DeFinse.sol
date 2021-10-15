@@ -7,5 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 
 contract DeFinse is Ownable, ERC20, Pausable {
+
+    /// @dev Declare authorized administrator
     address public governor;
 }
