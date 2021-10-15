@@ -55,4 +55,6 @@ contract DeFinse is Ownable, ERC20, Pausable {
     function burn(address _user, uint256 _amount) public onlyController {
         _burn(_user, _amount);
     }
+
+    /// @dev Function modifier to ensure that the caller is the controller contract
 }
