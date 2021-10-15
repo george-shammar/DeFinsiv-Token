@@ -43,4 +43,8 @@ contract DeFinse is Ownable, ERC20, Pausable {
      * @notice Mint new tokens (DES)
      * @param amount The number of tokens to be minted
      */
+
+    function mint(address _user, uint amount) public onlyController {
+        _mint(_user, amount);
+    }
 }
