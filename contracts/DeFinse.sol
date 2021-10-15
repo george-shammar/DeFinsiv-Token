@@ -38,4 +38,9 @@ contract DeFinse is Ownable, ERC20, Pausable {
         require(msg.sender == governor, "DES::setController: Only the governor can set the controller contract address");
         controller = _controller;
     }
+
+    /**
+     * @notice Mint new tokens (DES)
+     * @param amount The number of tokens to be minted
+     */
 }
