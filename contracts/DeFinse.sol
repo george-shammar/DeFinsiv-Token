@@ -13,4 +13,7 @@ contract DeFinse is Ownable, ERC20, Pausable {
 
     /// @notice is the contract address(DeFinsiv address) that is allowed to mint and burn token.
     address public controller;
+
+    /// @notice An event that is emitted when the governor's address changes
+    event GovernorChanged(address governor, address newGovernor);
 }
