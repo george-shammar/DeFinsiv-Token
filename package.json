@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/george-shammar/DeFinsiv-Token/issues"
   },
-  "homepage": "https://github.com/george-shammar/DeFinsiv-Token#readme"
+  "homepage": "https://github.com/george-shammar/DeFinsiv-Token#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2"
+  }
 }
