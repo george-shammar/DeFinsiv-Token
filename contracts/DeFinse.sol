@@ -47,4 +47,8 @@ contract DeFinse is Ownable, ERC20, Pausable {
     function mint(address _user, uint amount) public onlyController {
         _mint(_user, amount);
     }
+
+    /// @notice Allows the controller to burn tokens from a user account
+    /// @param _user Address of the holder account to burn tokens from
+    /// @param _amount Amount of tokens to burn
 }
