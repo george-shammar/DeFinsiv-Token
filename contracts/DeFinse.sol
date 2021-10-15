@@ -33,4 +33,9 @@ contract DeFinse is Ownable, ERC20, Pausable {
         governor = _governor;
         emit GovernorChanged(governor, _governor);
     }
+
+    function setController(address _controller) external {
+        require(msg.sender == governor, "DES::setController: Only the governor can set the controller contract address");
+        controller = _controller;
+    }
 }
