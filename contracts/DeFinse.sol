@@ -51,4 +51,8 @@ contract DeFinse is Ownable, ERC20, Pausable {
     /// @notice Allows the controller to burn tokens from a user account
     /// @param _user Address of the holder account to burn tokens from
     /// @param _amount Amount of tokens to burn
+        
+    function burn(address _user, uint256 _amount) public onlyController {
+        _burn(_user, _amount);
+    }
 }
