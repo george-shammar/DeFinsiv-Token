@@ -29,6 +29,6 @@ contract DeFinse is Ownable, ERC20, Pausable {
     */
 
     function setGovernor(address _governor) external {
-
+        require(msg.sender == governor, "DES::setGovernor: Only the governor can change the governor address");
     }
 }
