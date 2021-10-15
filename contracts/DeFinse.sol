@@ -57,4 +57,8 @@ contract DeFinse is Ownable, ERC20, Pausable {
     }
 
     /// @dev Function modifier to ensure that the caller is the controller contract
+    modifier onlyController {
+        require(msg.sender == address(controller), "This is a controlled token. Only callable by DeFinsiv contract");
+        _;
+    }
 }
