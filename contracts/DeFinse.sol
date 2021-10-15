@@ -25,6 +25,10 @@ contract DeFinse is Ownable, ERC20, Pausable {
 
     /**
     * @notice Change the governor address
-    * @param governor_ The address of the new minter
+    * @param _governor The address of the new governor
     */
+
+    function setGovernor(address _governor) external {
+
+    }
 }
