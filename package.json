@@ -1,0 +1,22 @@
+{
+  "name": "definsiv-token",
+  "version": "1.0.0",
+  "description": "Contract controlled token for the de-risked DeFi protocol",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george-shammar/DeFinsiv-Token.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/george-shammar/DeFinsiv-Token/issues"
+  },
+  "homepage": "https://github.com/george-shammar/DeFinsiv-Token#readme"
+}
