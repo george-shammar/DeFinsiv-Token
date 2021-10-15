@@ -16,4 +16,6 @@ contract DeFinse is Ownable, ERC20, Pausable {
 
     /// @notice An event that is emitted when the governor's address changes
     event GovernorChanged(address governor, address newGovernor);
+
+    /// @notice Construct a new DES token
 }
