@@ -10,4 +10,7 @@ contract DeFinse is Ownable, ERC20, Pausable {
 
     /// @dev Declare authorized administrator
     address public governor;
+
+    /// @notice is the contract address(DeFinsiv address) that is allowed to mint and burn token.
+    address public controller;
 }
